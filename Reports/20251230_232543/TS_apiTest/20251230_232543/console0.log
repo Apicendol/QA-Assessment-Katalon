@@ -1,0 +1,76 @@
+2025-12-30 23:25:48.652 INFO  c.k.k.c.l.logback.LogbackConfigurator    - Logback default configuration initialized from: C:\Users\ASUS\.katalon\packages\KS-10.4.3\configuration\org.eclipse.osgi\130\0\.cp\resources\logback\logback-execution.xml
+2025-12-30 23:25:48.657 INFO  c.k.k.c.l.logback.LogbackConfigurator    - Logback custom configuration initialized from: C:\Users\ASUS\Katalon Studio\Qoin Assesment\Include\config\log.properties
+2025-12-30 23:25:49.226 INFO  c.k.katalon.core.main.TestSuiteExecutor  - START Test Suites/TS_apiTest
+2025-12-30 23:25:49.335 INFO  c.k.katalon.core.main.TestSuiteExecutor  - userFullName = Herza Avicena
+2025-12-30 23:25:49.337 INFO  c.k.katalon.core.main.TestSuiteExecutor  - projectName = Qoin Assesment
+2025-12-30 23:25:49.338 INFO  c.k.katalon.core.main.TestSuiteExecutor  - hostName = ASUS - LAPTOP-T15R49FO
+2025-12-30 23:25:49.339 INFO  c.k.katalon.core.main.TestSuiteExecutor  - os = Windows 10 64bit
+2025-12-30 23:25:49.340 INFO  c.k.katalon.core.main.TestSuiteExecutor  - hostAddress = 192.168.1.11
+2025-12-30 23:25:49.341 INFO  c.k.katalon.core.main.TestSuiteExecutor  - katalonVersion = 10.4.3.0
+2025-12-30 23:25:50.145 INFO  c.k.katalon.core.main.TestCaseExecutor   - --------------------
+2025-12-30 23:25:50.145 INFO  c.k.katalon.core.main.TestCaseExecutor   - START Test Cases/TC_001_getListUsers
+2025-12-30 23:25:50.805 DEBUG testcase.TC_001_getListUsers             - 1: response = sendRequest(findTestObject("Object Repository/GET List Users"))
+2025-12-30 23:25:53.361 INFO  c.k.k.core.webservice.common.HarLogger   - HAR: C:\Users\ASUS\Katalon Studio\Qoin Assesment\Reports\20251230_232543\TS_apiTest\20251230_232543\requests\main\GET-List-Users_0.har
+2025-12-30 23:25:53.368 INFO  c.k.k.core.webservice.common.HarLogger   - cURL Command:
+curl \
+  --location \
+  --header 'Content-Type: text/plain' \
+  --header 'Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJhdWQiOiJlNTUwZGFjMjUwMjE4OTQyZjRmOTEzOTFiYjZkY2Nj NSIsInN1YiI6IjYwYWY2MDAxYzVjMWVmMDA1OWU2MzVlYiIsInNjb3BlcyI6WyJhcGlfcmVh ZCJdLCJ2ZXJzaW9uIjoxfQ.wGzbkGdNmzm7cWjLfyNFVGdpLJKMelfCaoEbUuYs-CA' \
+  'https://reqres.in/api/users?page=1'
+2025-12-30 23:25:53.516 DEBUG testcase.TC_001_getListUsers             - 2: verifyResponseStatusCode(response, 200)
+2025-12-30 23:25:53.556 DEBUG testcase.TC_001_getListUsers             - 3: println("GET List Users SUCCESS")
+GET List Users SUCCESS
+2025-12-30 23:25:53.566 INFO  c.k.katalon.core.main.TestCaseExecutor   - END Test Cases/TC_001_getListUsers
+2025-12-30 23:25:53.579 INFO  c.k.katalon.core.main.TestCaseExecutor   - --------------------
+2025-12-30 23:25:53.579 INFO  c.k.katalon.core.main.TestCaseExecutor   - START Test Cases/TC_002_getSingleUser
+2025-12-30 23:25:53.776 DEBUG testcase.TC_002_getSingleUser            - 1: response = sendRequest(findTestObject("Object Repository/GET Single User"))
+2025-12-30 23:25:54.369 INFO  c.k.k.core.webservice.common.HarLogger   - HAR: C:\Users\ASUS\Katalon Studio\Qoin Assesment\Reports\20251230_232543\TS_apiTest\20251230_232543\requests\main\GET-Single-User_1.har
+2025-12-30 23:25:54.370 INFO  c.k.k.core.webservice.common.HarLogger   - cURL Command:
+curl \
+  --location \
+  --header 'Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJhdWQiOiJlNTUwZGFjMjUwMjE4OTQyZjRmOTEzOTFiYjZkY2Nj NSIsInN1YiI6IjYwYWY2MDAxYzVjMWVmMDA1OWU2MzVlYiIsInNjb3BlcyI6WyJhcGlfcmVh ZCJdLCJ2ZXJzaW9uIjoxfQ.wGzbkGdNmzm7cWjLfyNFVGdpLJKMelfCaoEbUuYs-CA' \
+  'https://reqres.in/api/users/2'
+2025-12-30 23:25:54.379 DEBUG testcase.TC_002_getSingleUser            - 2: verifyResponseStatusCode(response, 200)
+2025-12-30 23:25:54.387 DEBUG testcase.TC_002_getSingleUser            - 3: jsonSlurper = new groovy.json.JsonSlurper()
+2025-12-30 23:25:54.410 DEBUG testcase.TC_002_getSingleUser            - 4: result = jsonSlurper.parseText(response.getResponseText())
+2025-12-30 23:25:54.448 DEBUG testcase.TC_002_getSingleUser            - 5: userEmail = email
+2025-12-30 23:25:54.464 DEBUG testcase.TC_002_getSingleUser            - 6: println("EMAIL DISIMPAN: " + userEmail)
+EMAIL DISIMPAN: janet.weaver@reqres.in
+2025-12-30 23:25:54.473 INFO  c.k.katalon.core.main.TestCaseExecutor   - END Test Cases/TC_002_getSingleUser
+2025-12-30 23:25:54.479 INFO  c.k.katalon.core.main.TestCaseExecutor   - --------------------
+2025-12-30 23:25:54.479 INFO  c.k.katalon.core.main.TestCaseExecutor   - START Test Cases/TC_003_putUpdate
+2025-12-30 23:25:54.611 DEBUG testcase.TC_003_putUpdate                - 1: response = sendRequest(findTestObject("Object Repository/PUT Update"))
+2025-12-30 23:25:54.977 INFO  c.k.k.core.webservice.common.HarLogger   - HAR: C:\Users\ASUS\Katalon Studio\Qoin Assesment\Reports\20251230_232543\TS_apiTest\20251230_232543\requests\main\PUT-Update_2.har
+2025-12-30 23:25:54.987 INFO  c.k.k.core.webservice.common.HarLogger   - cURL Command:
+curl \
+  --location \
+  --request PUT \
+  --data '{"first_name":"John","last_name":"Doe"}' \
+  --header 'Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJhdWQiOiJlNTUwZGFjMjUwMjE4OTQyZjRmOTEzOTFiYjZkY2Nj NSIsInN1YiI6IjYwYWY2MDAxYzVjMWVmMDA1OWU2MzVlYiIsInNjb3BlcyI6WyJhcGlfcmVh ZCJdLCJ2ZXJzaW9uIjoxfQ.wGzbkGdNmzm7cWjLfyNFVGdpLJKMelfCaoEbUuYs-CA' \
+  --header 'Content-Type: application/json' \
+  'https://reqres.in/api/users/2'
+2025-12-30 23:25:54.994 DEBUG testcase.TC_003_putUpdate                - 2: verifyResponseStatusCode(response, 200)
+2025-12-30 23:25:55.003 DEBUG testcase.TC_003_putUpdate                - 3: verifyElementPropertyValue(response, "first_name", "John")
+2025-12-30 23:25:55.082 DEBUG testcase.TC_003_putUpdate                - 4: verifyElementPropertyValue(response, "last_name", "Doe")
+2025-12-30 23:25:55.131 DEBUG testcase.TC_003_putUpdate                - 5: println("PUT Update SUCCESS")
+PUT Update SUCCESS
+2025-12-30 23:25:55.136 INFO  c.k.katalon.core.main.TestCaseExecutor   - END Test Cases/TC_003_putUpdate
+2025-12-30 23:25:55.141 INFO  c.k.katalon.core.main.TestCaseExecutor   - --------------------
+2025-12-30 23:25:55.141 INFO  c.k.katalon.core.main.TestCaseExecutor   - START Test Cases/TC_004_postRegister
+2025-12-30 23:25:55.289 DEBUG testcase.TC_004_postRegister             - 1: response = sendRequest(findTestObject("Object Repository/POST Register", ["userEmail":userEmail]))
+2025-12-30 23:25:55.981 INFO  c.k.k.core.webservice.common.HarLogger   - HAR: C:\Users\ASUS\Katalon Studio\Qoin Assesment\Reports\20251230_232543\TS_apiTest\20251230_232543\requests\main\POST-Register_3.har
+2025-12-30 23:25:55.983 INFO  c.k.k.core.webservice.common.HarLogger   - cURL Command:
+curl \
+  --location \
+  --request POST \
+  --data '{"email":"janet.weaver@reqres.in","password":"pistol"}' \
+  --header 'Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJhdWQiOiJlNTUwZGFjMjUwMjE4OTQyZjRmOTEzOTFiYjZkY2Nj NSIsInN1YiI6IjYwYWY2MDAxYzVjMWVmMDA1OWU2MzVlYiIsInNjb3BlcyI6WyJhcGlfcmVh ZCJdLCJ2ZXJzaW9uIjoxfQ.wGzbkGdNmzm7cWjLfyNFVGdpLJKMelfCaoEbUuYs-CA' \
+  --header 'Content-Type: application/json' \
+  'https://reqres.in/api/register'
+2025-12-30 23:25:55.988 DEBUG testcase.TC_004_postRegister             - 2: verifyResponseStatusCode(response, 200)
+2025-12-30 23:25:55.995 DEBUG testcase.TC_004_postRegister             - 3: println("REGISTER SUCCESS DENGAN EMAIL: " + userEmail)
+REGISTER SUCCESS DENGAN EMAIL: janet.weaver@reqres.in
+2025-12-30 23:25:55.999 INFO  c.k.katalon.core.main.TestCaseExecutor   - END Test Cases/TC_004_postRegister
+2025-12-30 23:25:56.094 INFO  c.k.katalon.core.main.TestSuiteExecutor  - --------------------
+2025-12-30 23:25:56.095 INFO  c.k.katalon.core.main.TestSuiteExecutor  - END Test Suites/TS_apiTest
+2025-12-30 23:25:56.095 INFO  c.k.katalon.core.main.TestSuiteExecutor  - ====================

@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites name="TS_apiTest" time="6.15" tests="4" failures="0" errors="0">
+   <testsuite name="TS_apiTest" tests="4" failures="0" errors="0" time="6.15" skipped="0" timestamp="2026-01-02T02:14:35.806Z" hostname="ASUS - LAPTOP-T15R49FO" id="Test Suites/TS_apiTest">
+      <properties>
+         <property name="deviceName" value=""/>
+         <property name="devicePlatform"/>
+         <property name="logFolder" value="C:\\Users\\ASUS\\Katalon Studio\\QA Assesment\\Reports\\20260102_091429\\TS_apiTest\\20260102_091429"/>
+         <property name="logFiles" value="C:\\Users\\ASUS\\Katalon Studio\\QA Assesment\\Reports\\20260102_091429\\TS_apiTest\\20260102_091429\\console0.log, C:\\Users\\ASUS\\Katalon Studio\\QA Assesment\\Reports\\20260102_091429\\TS_apiTest\\20260102_091429\\execution0.log"/>
+         <property name="attachments" value=""/>
+         <property name="userFullName" value="Herza Avicena"/>
+         <property name="hostName" value="ASUS - LAPTOP-T15R49FO"/>
+         <property name="hostAddress" value="192.168.1.11"/>
+         <property name="projectName" value="QA Assesment"/>
+         <property name="os" value="Windows 10 64bit"/>
+         <property name="katalonVersion" value="10.4.3.0"/>
+      </properties>
+      <testcase name="Test Cases/TC_001_getListUsers" time="3.326" classname="Test Cases/TC_001_getListUsers" status="PASSED">
+         <system-out><![CDATA[02-01-2026T09:14:36 - [TEST_CASE][PASSED] - Test Cases/TC_001_getListUsers: Test Cases/TC_001_getListUsers
+
+02-01-2026T09:14:37 - [TEST_STEP][PASSED] - response = sendRequest(findTestObject("Object Repository/GET List Users")): Send request successfully
+
+02-01-2026T09:14:39 - [MESSAGE][INFO] - HAR: C:\Users\ASUS\Katalon Studio\QA Assesment\Reports\20260102_091429\TS_apiTest\20260102_091429\requests\main\GET-List-Users_0.har
+
+02-01-2026T09:14:39 - [MESSAGE][INFO] - cURL Command:
+curl \
+  --location \
+  --header 'Content-Type: text/plain' \
+  --header 'Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJhdWQiOiJlNTUwZGFjMjUwMjE4OTQyZjRmOTEzOTFiYjZkY2Nj NSIsInN1YiI6IjYwYWY2MDAxYzVjMWVmMDA1OWU2MzVlYiIsInNjb3BlcyI6WyJhcGlfcmVh ZCJdLCJ2ZXJzaW9uIjoxfQ.wGzbkGdNmzm7cWjLfyNFVGdpLJKMelfCaoEbUuYs-CA' \
+  'https://reqres.in/api/users?page=1'
+
+02-01-2026T09:14:40 - [MESSAGE][PASSED] - Send request successfully
+
+02-01-2026T09:14:40 - [TEST_STEP][PASSED] - verifyResponseStatusCode(response, 200): Verify response status code successfully
+
+02-01-2026T09:14:40 - [MESSAGE][PASSED] - Verify response status code successfully
+
+02-01-2026T09:14:40 - [TEST_STEP][PASSED] - println("GET List Users SUCCESS"): null]]></system-out>
+         <system-err><![CDATA[]]></system-err>
+      </testcase>
+      <testcase name="Test Cases/TC_002_getSingleUser" time="0.59" classname="Test Cases/TC_002_getSingleUser" status="PASSED">
+         <system-out><![CDATA[02-01-2026T09:14:40 - [TEST_CASE][PASSED] - Test Cases/TC_002_getSingleUser: Test Cases/TC_002_getSingleUser
+
+02-01-2026T09:14:40 - [TEST_STEP][PASSED] - response = sendRequest(findTestObject("Object Repository/GET Single User")): Send request successfully
+
+02-01-2026T09:14:40 - [MESSAGE][INFO] - HAR: C:\Users\ASUS\Katalon Studio\QA Assesment\Reports\20260102_091429\TS_apiTest\20260102_091429\requests\main\GET-Single-User_1.har
+
+02-01-2026T09:14:40 - [MESSAGE][INFO] - cURL Command:
+curl \
+  --location \
+  --header 'Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJhdWQiOiJlNTUwZGFjMjUwMjE4OTQyZjRmOTEzOTFiYjZkY2Nj NSIsInN1YiI6IjYwYWY2MDAxYzVjMWVmMDA1OWU2MzVlYiIsInNjb3BlcyI6WyJhcGlfcmVh ZCJdLCJ2ZXJzaW9uIjoxfQ.wGzbkGdNmzm7cWjLfyNFVGdpLJKMelfCaoEbUuYs-CA' \
+  'https://reqres.in/api/users/2'
+
+02-01-2026T09:14:40 - [MESSAGE][PASSED] - Send request successfully
+
+02-01-2026T09:14:40 - [TEST_STEP][PASSED] - verifyResponseStatusCode(response, 200): Verify response status code successfully
+
+02-01-2026T09:14:40 - [MESSAGE][PASSED] - Verify response status code successfully
+
+02-01-2026T09:14:40 - [TEST_STEP][PASSED] - jsonSlurper = new groovy.json.JsonSlurper(): null
+
+02-01-2026T09:14:40 - [TEST_STEP][PASSED] - result = jsonSlurper.parseText(response.getResponseText()): null
+
+02-01-2026T09:14:40 - [TEST_STEP][PASSED] - userEmail = email: null
+
+02-01-2026T09:14:40 - [TEST_STEP][PASSED] - println("EMAIL DISIMPAN: " + userEmail): null]]></system-out>
+         <system-err><![CDATA[]]></system-err>
+      </testcase>
+      <testcase name="Test Cases/TC_003_putUpdate" time="0.77" classname="Test Cases/TC_003_putUpdate" status="PASSED">
+         <system-out><![CDATA[02-01-2026T09:14:40 - [TEST_CASE][PASSED] - Test Cases/TC_003_putUpdate: Test Cases/TC_003_putUpdate
+
+02-01-2026T09:14:40 - [TEST_STEP][PASSED] - response = sendRequest(findTestObject("Object Repository/PUT Update")): Send request successfully
+
+02-01-2026T09:14:41 - [MESSAGE][INFO] - HAR: C:\Users\ASUS\Katalon Studio\QA Assesment\Reports\20260102_091429\TS_apiTest\20260102_091429\requests\main\PUT-Update_2.har
+
+02-01-2026T09:14:41 - [MESSAGE][INFO] - cURL Command:
+curl \
+  --location \
+  --request PUT \
+  --data '{"first_name":"John","last_name":"Doe"}' \
+  --header 'Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJhdWQiOiJlNTUwZGFjMjUwMjE4OTQyZjRmOTEzOTFiYjZkY2Nj NSIsInN1YiI6IjYwYWY2MDAxYzVjMWVmMDA1OWU2MzVlYiIsInNjb3BlcyI6WyJhcGlfcmVh ZCJdLCJ2ZXJzaW9uIjoxfQ.wGzbkGdNmzm7cWjLfyNFVGdpLJKMelfCaoEbUuYs-CA' \
+  --header 'Content-Type: application/json' \
+  'https://reqres.in/api/users/2'
+
+02-01-2026T09:14:41 - [MESSAGE][PASSED] - Send request successfully
+
+02-01-2026T09:14:41 - [TEST_STEP][PASSED] - verifyResponseStatusCode(response, 200): Verify response status code successfully
+
+02-01-2026T09:14:41 - [MESSAGE][PASSED] - Verify response status code successfully
+
+02-01-2026T09:14:41 - [TEST_STEP][PASSED] - verifyElementPropertyValue(response, "first_name", "John"): Verify element property value successfully
+
+02-01-2026T09:14:41 - [MESSAGE][PASSED] - Verify element property value successfully
+
+02-01-2026T09:14:41 - [TEST_STEP][PASSED] - verifyElementPropertyValue(response, "last_name", "Doe"): Verify element property value successfully
+
+02-01-2026T09:14:41 - [MESSAGE][PASSED] - Verify element property value successfully
+
+02-01-2026T09:14:41 - [TEST_STEP][PASSED] - println("PUT Update SUCCESS"): null]]></system-out>
+         <system-err><![CDATA[]]></system-err>
+      </testcase>
+      <testcase name="Test Cases/TC_004_postRegister" time="0.465" classname="Test Cases/TC_004_postRegister" status="PASSED">
+         <system-out><![CDATA[02-01-2026T09:14:41 - [TEST_CASE][PASSED] - Test Cases/TC_004_postRegister: Test Cases/TC_004_postRegister
+
+02-01-2026T09:14:41 - [TEST_STEP][PASSED] - response = sendRequest(findTestObject("Object Repository/POST Register", ["userEmail":userEmail])): Send request successfully
+
+02-01-2026T09:14:41 - [MESSAGE][INFO] - HAR: C:\Users\ASUS\Katalon Studio\QA Assesment\Reports\20260102_091429\TS_apiTest\20260102_091429\requests\main\POST-Register_3.har
+
+02-01-2026T09:14:41 - [MESSAGE][INFO] - cURL Command:
+curl \
+  --location \
+  --request POST \
+  --data '{"email":"janet.weaver@reqres.in","password":"pistol"}' \
+  --header 'Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJhdWQiOiJlNTUwZGFjMjUwMjE4OTQyZjRmOTEzOTFiYjZkY2Nj NSIsInN1YiI6IjYwYWY2MDAxYzVjMWVmMDA1OWU2MzVlYiIsInNjb3BlcyI6WyJhcGlfcmVh ZCJdLCJ2ZXJzaW9uIjoxfQ.wGzbkGdNmzm7cWjLfyNFVGdpLJKMelfCaoEbUuYs-CA' \
+  --header 'Content-Type: application/json' \
+  'https://reqres.in/api/register'
+
+02-01-2026T09:14:41 - [MESSAGE][PASSED] - Send request successfully
+
+02-01-2026T09:14:41 - [TEST_STEP][PASSED] - verifyResponseStatusCode(response, 200): Verify response status code successfully
+
+02-01-2026T09:14:41 - [MESSAGE][PASSED] - Verify response status code successfully
+
+02-01-2026T09:14:41 - [TEST_STEP][PASSED] - println("REGISTER SUCCESS DENGAN EMAIL: " + userEmail): null]]></system-out>
+         <system-err><![CDATA[]]></system-err>
+      </testcase>
+      <system-out><![CDATA[02-01-2026T09:14:35 - [TEST_SUITE][PASSED] - TS_apiTest: null]]></system-out>
+      <system-err><![CDATA[]]></system-err>
+   </testsuite>
+</testsuites>

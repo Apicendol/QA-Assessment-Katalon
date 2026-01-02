@@ -1,0 +1,27 @@
+Suite/Test/Step Name,Browser,Description,Tag,Start time,End time,Duration,Status
+TS_apiTest,,,,02-01-2026 09:14:35,02-01-2026 09:14:42,6.245s,PASSED
+,,,,,,,
+Test Cases/TC_001_getListUsers,,,,02-01-2026 09:14:36,02-01-2026 09:14:40,3.326s,PASSED
+"response = sendRequest(findTestObject(""Object Repository/GET List Users""))",,,,02-01-2026 09:14:37,02-01-2026 09:14:40,2.472s,PASSED
+"verifyResponseStatusCode(response, 200)",,,,02-01-2026 09:14:40,02-01-2026 09:14:40,0.063s,PASSED
+"println(""GET List Users SUCCESS"")",,,,02-01-2026 09:14:40,02-01-2026 09:14:40,0.014s,PASSED
+,,,,,,,
+Test Cases/TC_002_getSingleUser,,,,02-01-2026 09:14:40,02-01-2026 09:14:40,0.590s,PASSED
+"response = sendRequest(findTestObject(""Object Repository/GET Single User""))",,,,02-01-2026 09:14:40,02-01-2026 09:14:40,0.166s,PASSED
+"verifyResponseStatusCode(response, 200)",,,,02-01-2026 09:14:40,02-01-2026 09:14:40,0.015s,PASSED
+jsonSlurper = new groovy.json.JsonSlurper(),,,,02-01-2026 09:14:40,02-01-2026 09:14:40,0.033s,PASSED
+result = jsonSlurper.parseText(response.getResponseText()),,,,02-01-2026 09:14:40,02-01-2026 09:14:40,0.062s,PASSED
+userEmail = email,,,,02-01-2026 09:14:40,02-01-2026 09:14:40,0.031s,PASSED
+"println(""EMAIL DISIMPAN: "" + userEmail)",,,,02-01-2026 09:14:40,02-01-2026 09:14:40,0.013s,PASSED
+,,,,,,,
+Test Cases/TC_003_putUpdate,,,,02-01-2026 09:14:40,02-01-2026 09:14:41,0.770s,PASSED
+"response = sendRequest(findTestObject(""Object Repository/PUT Update""))",,,,02-01-2026 09:14:40,02-01-2026 09:14:41,0.494s,PASSED
+"verifyResponseStatusCode(response, 200)",,,,02-01-2026 09:14:41,02-01-2026 09:14:41,0.009s,PASSED
+"verifyElementPropertyValue(response, ""first_name"", ""John"")",,,,02-01-2026 09:14:41,02-01-2026 09:14:41,0.062s,PASSED
+"verifyElementPropertyValue(response, ""last_name"", ""Doe"")",,,,02-01-2026 09:14:41,02-01-2026 09:14:41,0.049s,PASSED
+"println(""PUT Update SUCCESS"")",,,,02-01-2026 09:14:41,02-01-2026 09:14:41,0.002s,PASSED
+,,,,,,,
+Test Cases/TC_004_postRegister,,,,02-01-2026 09:14:41,02-01-2026 09:14:41,0.465s,PASSED
+"response = sendRequest(findTestObject(""Object Repository/POST Register"", [""userEmail"":userEmail]))",,,,02-01-2026 09:14:41,02-01-2026 09:14:41,0.308s,PASSED
+"verifyResponseStatusCode(response, 200)",,,,02-01-2026 09:14:41,02-01-2026 09:14:41,0.006s,PASSED
+"println(""REGISTER SUCCESS DENGAN EMAIL: "" + userEmail)",,,,02-01-2026 09:14:41,02-01-2026 09:14:41,0.002s,PASSED
